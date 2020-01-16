@@ -10,6 +10,6 @@
     </block>
   </view>
   <view class="usermotto">
-    <text class="user-motto">{{motto}}.欢迎来到**大学</text>
+    <text class="user-motto">{{motto}}.欢迎来到**大学！</text>
   </view>
 </view>
