@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World!',
+    motto: 'Hello World1',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
@@ -50,25 +50,6 @@ Page({
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
-    })
-  },
-  jump:function(e){
-    //页面跳转
-    wx.request({
-      url: 'https://www.baidu.com', //仅为示例，并非真实的接口地址
-      data: {
-        x: '',
-        y: ''
-      },
-      header: {
-        'content-type': 'application/json' // 默认值
-      },
-      success: function (res) {
-        console.log("后台登录成功！")
-        console.log(res.data)
-        wx.navigateTo({ url: '/pages/test1/test1', });
-
-      }
     })
   }
 })
